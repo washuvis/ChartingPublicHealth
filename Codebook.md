@@ -122,4 +122,6 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - color.hsv_names (MH: Should I include?)
   - Description: List of our assigned HSV names.
   - Type: List
-
+- td.text_density (MH: Should I include?)
+  - Description: Text density level of the visualization.
+  - Type: Text (Low, Middle, High)
