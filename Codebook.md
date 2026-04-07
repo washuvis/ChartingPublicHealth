@@ -100,7 +100,7 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - ve.medical_imaging_present (MH: what did we describe of medical imaging in our prompt?)
   - Description: Evaluates if a medical imaging was present in the visualization.
   - Type: Boolean
-- ve.datapoints_shapes_lines (MH: what did we describe of medical imaging in our prompt?)
+- ve.datapoints_shapes_lines (MH: what is our exact description?)
   - Description: Evaluates if the data points were unique shapes or have different marked lines.
 - ve.has_text_annotations
   - Description: Evaluates if the visualization has text annotations. 
@@ -123,4 +123,3 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
   - Description: List of our assigned HSV names.
   - Type: List
 
-* 
