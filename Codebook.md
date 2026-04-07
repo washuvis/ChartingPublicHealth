@@ -25,10 +25,10 @@
 - Last Modified
   - Description: Last-Modified field in the HTTP Response (if applicable) from the linked web page.
   - Type: Date, Null (Denoted as Not Found)
-- Title
+- Webpage Title
   - Description: Title tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Blank) 
-- Description
+- Webpage Description
   - Description: Description tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Denoted as Blank or Not Found)
 - Image URL
@@ -62,9 +62,6 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - sf.multi_panel
   - Description: Evaluates if the visualization containes multiple panels. 
   - Type: Boolean
-- sf.title_present
-  - Descripton: Evaluates if the visualization contains a title.
-  - Type: Boolean
 - sf.axes_labeled
   - Description: Evaluates if the visualization has labeled axes.
   - Type: Boolean
@@ -80,7 +77,7 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - sf.has_grid_lines
   - Description: Evalautes if the visualization has grid lines.
   - Type: Boolean
-- sf.has_title
+- sf.has_title (MH: double check this is one we consistently use)
   - Description: Evalautes if the visualization has title.
   - Type: Boolean
 - sf.has_y_axis
