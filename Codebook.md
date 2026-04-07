@@ -25,10 +25,10 @@
 - Last Modified
   - Description: Last-Modified field in the HTTP Response (if applicable) from the linked web page.
   - Type: Date, Null (Denoted as Not Found)
-- Webpage Title
+- Webpage Title (MH: Change name)
   - Description: Title tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Blank) 
-- Webpage Description
+- Webpage Description (MH: Change name)
   - Description: Description tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Denoted as Blank or Not Found)
 - Image URL
