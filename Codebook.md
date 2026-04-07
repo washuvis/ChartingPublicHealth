@@ -31,30 +31,30 @@
 Webpage Author
   - Description: Author tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Denoted as Blank or Not Found in csv)
-- Webpage Description (MH: Change name)
+- Webpage Description
   - Description: Description tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Denoted as Blank or Not Found in csv)
 - Image URL
   - Description: The exact URL that stored the visualization on the organizations website. 
   - Type: URL
-- Visualization Name (MH: Change order, change name)
+- Visualization Name 
   - Description: The filename of the scraped visualization.
   - Type: Filename (Filename assignment is described at the bottom of this section)
-- Visualization Text (MH: Change order, change name)
+- Visualization Text
   - Description: The text grabed from the Pytesseract, which is a Python wrapper for Google's Tesseract OCR Engine.
   - Type: Text
 
 Note: File naming convention is as follows: organization_acronym-url_id-health-image_scraped_number. organization_acronym is the self-assigned acyonym from researchers. url_id is the primarykey we used when web scraping. health is the simply field of the organizations; all files include the word health. Image scraped number is the count of how many images were scraped associated with the url id, at the time this image was scraped.
     
 ## Chart Family and Data Context
-- cf.chart_type_primary (MH: Add number of options)
+- cf.chart_type_primary 
   - Description: Assigns the primary chart family of the described options, e.g., line chart, bar chart, area chart, etc. 
   - Type: Text
 - cf.chart_type_secondary
   - Description: Assigns the secondary chart family (if applicable). 
   - Type: Text
 - dc.data_context_primary (MH: Add number of options, examples)
-  - Description: Assigns the primary data context of the described options, e.g., . . . 
+  - Description: Assigns the primary data context of the described options, e.g., temporal_trend, hierarchical, categorical_comparison, etc. 
   - Type: Text
 - dc.data_context_secondary
   - Description: Assigns the secondary data context.  
@@ -80,7 +80,7 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - sf.has_grid_lines
   - Description: Evalautes if the visualization has grid lines.
   - Type: Boolean
-- sf.has_title (MH: double check this is one we consistently use)
+- sf.has_title
   - Description: Evalautes if the visualization has title.
   - Type: Boolean
 - sf.has_y_axis
@@ -91,16 +91,16 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
   - Type: Boolean
   
 ## Visual Embellishments 
-- ve.iconography_present (MH: change order, how did we describe iconography in our prompt?)
+- ve.iconography_present 
   - Description: Evaluates if iconography was present in the visualization.
   - Type: Boolean
 - ve.photograph_present
   - Description: Evaluates if a photograph was present in the visualization.
   - Type: Boolean
-- ve.medical_imaging_present (MH: what did we describe of medical imaging in our prompt?)
+- ve.medical_imaging_present
   - Description: Evaluates if a medical imaging was present in the visualization.
   - Type: Boolean
-- ve.datapoints_shapes_lines (MH: what is our exact description?)
+- ve.datapoints_shapes_lines
   - Description: Evaluates if the data points were unique shapes or have different marked lines.
 - ve.has_text_annotations
   - Description: Evaluates if the visualization has text annotations. 
