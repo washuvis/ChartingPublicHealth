@@ -4,19 +4,19 @@
 - Organization Name
   - Description: Full organization name used in our study.
   - Type: Text
-- Organization Acronym (MH: Add here)
+- Organization Acronym 
   - Description: Our self-assigned acronym from the organization name.
   - Type: Text
-- Organization Type (MH: Update labels, minimize variety)
+- Organization Type
   - Description: Organization classification: National Agency, Nonprofit, or International Agency
   - Type: Text
 - Directory Index Page URL
   - Description: The search directory index page that the web scraper was on prior to opening the linked web page (if applicable) where the visualization was found.
   - Type: URL
-- Directory Keyword (MH: Change name)
+- Directory Keyword 
   - Description: The keyword used in the search directory to find this visualization.
   - Type: Text
-- Directory Link URL (MH: Change order)
+- Directory Link URL 
   - Description: The linked web page off of the search directory index page that the visualization was scraped from or found.
   - Type: URL
 - Date Scraped
@@ -25,12 +25,15 @@
 - Last Modified
   - Description: Last-Modified field in the HTTP Response (if applicable) from the linked web page.
   - Type: Date, Null (Denoted as Not Found)
-- Webpage Title (MH: Change name)
+- Webpage Title 
   - Description: Title tag in the HTML content from linked web page (if applicable) that the visualization was found. 
-  - Type: Text, Null (Blank) 
+  - Type: Text, Null (Blank)
+Webpage Author
+  - Description: Author tag in the HTML content from linked web page (if applicable) that the visualization was found. 
+  - Type: Text, Null (Denoted as Blank or Not Found in csv)
 - Webpage Description (MH: Change name)
   - Description: Description tag in the HTML content from linked web page (if applicable) that the visualization was found. 
-  - Type: Text, Null (Denoted as Blank or Not Found)
+  - Type: Text, Null (Denoted as Blank or Not Found in csv)
 - Image URL
   - Description: The exact URL that stored the visualization on the organizations website. 
   - Type: URL
@@ -116,9 +119,9 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - color.number_of_colors
   - Description: Count of colors with a threshold of saturation and hue in the visualization. For instance, we don't include white, gray, and black colors in the count.
   - Type: Number
-- color.hsv_names (MH: Should I include?)
+- color.hsv_names
   - Description: List of our assigned HSV names.
   - Type: List
-- td.text_density (MH: Should I include?)
+- td.text_density 
   - Description: Text density level of the visualization.
   - Type: Text (Low, Middle, High)
