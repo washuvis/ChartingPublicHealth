@@ -24,10 +24,10 @@
   - Type: Date
 - Last Modified
   - Description: Last-Modified field in the HTTP Response (if applicable) from the linked web page.
-  - Type: Date, Null (Denoted as Not Found)
+  - Type: Date, Null (Denoted as Not Found in csv)
 - Webpage Title 
   - Description: Title tag in the HTML content from linked web page (if applicable) that the visualization was found. 
-  - Type: Text, Null (Blank)
+  - Type: Text, Null (Blank in csv)
 Webpage Author
   - Description: Author tag in the HTML content from linked web page (if applicable) that the visualization was found. 
   - Type: Text, Null (Denoted as Blank or Not Found in csv)
