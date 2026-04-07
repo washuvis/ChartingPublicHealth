@@ -36,14 +36,91 @@
   - Type: URL
 - Visualization Name (MH: Change order, change name)
   - Description: The filename of the scraped visualization.
-  - Type: Filename
-  - Note: Naming convention is as follows: organization_acronym-url_id-health-image_scraped_number. Organization acronym is the self-assigned 
-  
+  - Type: Filename (Filename assignment is described at the bottom of this section)
+- Visualization Text (MH: Change order, change name)
+  - Description: The text grabed from the Pytesseract, which is a Python wrapper for Google's Tesseract OCR Engine.
+  - Type: Text
+
+Note: File naming convention is as follows: organization_acronym-url_id-health-image_scraped_number. organization_acronym is the self-assigned acyonym from researchers. url_id is the primarykey we used when web scraping. health is the simply field of the organizations; all files include the word health. Image scraped number is the count of how many images were scraped associated with the url id, at the time this image was scraped.
+    
+## Chart Family and Data Context
+- cf.chart_type_primary (MH: Add number of options)
+  - Description: Assigns the primary chart family of the described options, e.g., line chart, bar chart, area chart, etc. 
+  - Type: Text
+- cf.chart_type_secondary
+  - Description: Assigns the secondary chart family (if applicable). 
+  - Type: Text
+- dc.data_context_primary (MH: Add number of options, examples)
+  - Description: Assigns the primary data context of the described options, e.g., . . . 
+  - Type: Text
+- dc.data_context_secondary
+  - Description: Assigns the secondary data context.  
+  - Type: Text
 
 
 ## Structural Features 
-
+- sf.multi_panel
+  - Description: Evaluates if the visualization containes multiple panels. 
+  - Type: Boolean
+- sf.title_present
+  - Descripton: Evaluates if the visualization contains a title.
+  - Type: Boolean
+- sf.axes_labeled
+  - Description: Evaluates if the visualization has labeled axes.
+  - Type: Boolean
+- sf.missing_data_present (MH: change order, did we describe iconography in our prompt?)
+  - Description: Evaluates if the visualization has denoted missing data. 
+  - Type: Boolean
+- sf.has_direct_labels
+  - Description: Evaluates if the visualization has direct labels. 
+  - Type: Boolean
+- sf.has_legend
+  - Description: Evaluates if the visualization has a legend.
+  - Type: Boolean
+- sf.has_grid_lines
+  - Description: Evalautes if the visualization has grid lines.
+  - Type: Boolean
+- sf.has_title
+  - Description: Evalautes if the visualization has title.
+  - Type: Boolean
+- sf.has_y_axis
+  - Description: Evaluates if the visualization has a y axis.
+  - Type: Boolean
+- sf.has_x_axis
+  - Description: Evaluates if the visualization has a x axis.
+  - Type: Boolean
+  
 ## Visual Embellishments 
+- ve.iconography_present (MH: change order, how did we describe iconography in our prompt?)
+  - Description: Evaluates if iconography was present in the visualization.
+  - Type: Boolean
+- ve.photograph_present
+  - Description: Evaluates if a photograph was present in the visualization.
+  - Type: Boolean
+- ve.medical_imaging_present (MH: what did we describe of medical imaging in our prompt?)
+  - Description: Evaluates if a medical imaging was present in the visualization.
+  - Type: Boolean
+- ve.datapoints_shapes_lines (MH: what did we describe of medical imaging in our prompt?)
+  - Description: Evaluates if the data points were unique shapes or have different marked lines.
+- ve.has_text_annotations
+  - Description: Evaluates if the visualization has text annotations. 
+  - Type: Boolean
 
-## Color 
+## Color & Text Density 
+- color.color_values
+  - Description: The assigned HEX codes for the colors observed by GPT.
+  - Type: List
+- color.color_blind_risky
+  - Descroption: Determined to have a risky pair of colors under normal or CVD conditions such as protanomaly, deuteranomaly, and tritanomaly.
+  - Type: Boolean
+- color.grayscale
+  - Description: Determined to only have grayscale colors in the image, e.g., white, gray, and black.
+  - Type: Boolean
+- color.number_of_colors
+  - Description: Count of colors with a threshold of saturation and hue in the visualization. For instance, we don't include white, gray, and black colors in the count.
+  - Type: Number
+- color.hsv_names (MH: Should I include?)
+  - Description: List of our assigned HSV names.
+  - Type: List
 
+* 
