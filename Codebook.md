@@ -65,7 +65,7 @@ Note: File naming convention is as follows: organization_acronym-url_id-health-i
 - sf.axes_labeled
   - Description: Evaluates if the visualization has labeled axes.
   - Type: Boolean
-- sf.missing_data_present (MH: change order, did we describe iconography in our prompt?)
+- sf.missing_data_present 
   - Description: Evaluates if the visualization has denoted missing data. 
   - Type: Boolean
 - sf.has_direct_labels
