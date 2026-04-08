@@ -12,7 +12,7 @@ Python scripts that show our computation of Text Density, Color Accessibility Ri
 Image files (PNG or PDF) of our interesting charts in the paper: desgin profiles, global view of design practices, and evaluating risky pairs in color accessibility measurement. 
 
 ## PCA Work 
-Python scripts used to evaluate Visualization Design Profiles: Statistical, Institutional, Narrative, Scientific, and Outlier. Figures produced in those scripts were for internal analytical use only -- they're not featured in the paper. 
+Python scripts used to evaluate Visualization Design Profiles: Statistical, Institutional, Narrative, Scientific, and Outlier.  Within the PCA Work, we used a dataset that described each organization's visualization corpus by evaluating the percentage of a particular label, e.g., has text annotation or is bar chart, within that corpus. In our PCA scripts, we standarized all labels measurements within that dataset. Note, figures produced in those scripts were for internal analytical use only -- they're not featured in the paper.
 
 ## Visualizations 
 All image files of the 4,285 visualizations within our final corpus.
