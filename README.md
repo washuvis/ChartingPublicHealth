@@ -8,11 +8,14 @@ Directory includes the complete dataset (either in CSV or JSON format) consistin
 ## Measurements 
 Python scripts that show our computation of Text Density, Color Accessibility Risk, and HSV Color Assignments (consisting of the derived variables: palette size, if the visualization is grayscale, HSV color names assignment). 
 
+## Paper Charts
+Image files (PNG or PDF) of our interesting charts in the paper: desgin profiles, global view of design practices, and evaluating risky pairs in color accessibility measurement. 
+
 ## PCA Work 
 Python scripts used to evaluate Visualization Design Profiles: Statistical, Institutional, Narrative, Scientific, and Outlier. 
 
 ## Visualizations 
-All image files of the 4,285 visualizations within our final corpus. 
+All image files of the 4,285 visualizations within our final corpus.
 
 ## Codebook.md 
 A complete codebook of all the tags featured in the dataset. 
