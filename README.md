@@ -39,3 +39,8 @@ We use the following Python packages in the code files included in this reposito
 - pandas
 - colorspacious
 - scikit-image
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
+
