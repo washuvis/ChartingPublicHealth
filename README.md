@@ -29,10 +29,10 @@ We use the following Python packages in the code files included in this reposito
 - numpy
 - re
 - itertools
+- colorsys
 
 ### Third-Party Libraries
 - Pillow - Python Imaging Library (PIL)
 - pandas
-- colorsys
 - colorspacious
 - scikit-image
