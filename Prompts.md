@@ -1,7 +1,6 @@
 # GPT Prompts 
 ## GPT Prompt used in 4b (classifying if the image is visualization)
-`
-SYSTEM_PROMPT = """You are assisting with building a research corpus of data visualizations.
+`SYSTEM_PROMPT = """You are assisting with building a research corpus of data visualizations.
 
 Your job is to analyze an image and determine whether it contains a data visualization.
 
@@ -51,8 +50,7 @@ Rules:
 - Assign up to 3 visualization types.
 - If the image is not a visualization, return an empty list.
 - Keep the answer terse and valid JSON only.
-"""
-`
+"""`
 
 ## GPT Prompt used in 5b (visual embellishments primarily extracted)
 
