@@ -1,6 +1,7 @@
 import pandas as pd 
 import numpy as np
 import colorsys 
+from pathlib import Path
 
 # dictionary that holds our decided colors and their hue ranges in this study. 
 COLOR_RULES = {
@@ -147,7 +148,9 @@ def classify_colors_hsv(vis_colors):
 # this is just an example, one can easily infer how we made this step iterative and assigned them to all visualizations. 
 def example_run():
     # read in our dataset
-    visualizations_labels = pd.read_csv("./Dataset/visualizations_labels.csv")
+    script_dir = Path(__file__).parent
+    file_path = script_dir.parent / "Dataset" / "visualizations_labels.csv"
+    visualizations_labels = pd.read_csv(file_path)
 
     # grab a random visualization's index 
     random_index = visualizations_labels.sample(n=1).index[0]

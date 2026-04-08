@@ -9,13 +9,15 @@ import re
 def text_levels(): 
 
     # reading in labels 
-    visualizations = pd.read_csv("./Dataset/visualizations_labels.csv")
+    script_dir = Path(__file__).parent
+    csv_file_path = script_dir.parent / "Dataset" / "visualizations_labels.csv"
+    visualizations_labels = pd.read_csv(csv_file_path)
 
     # list to hold each visualization's computed text density
     edited_all_vis_text = []
 
     # iterate through each visualization 
-    for index, row in visualizations.iterrows():
+    for index, row in visualizations_labels.iterrows():
 
         # grabbing vis text
         vis_text = row["Visualization Text"]
@@ -29,7 +31,7 @@ def text_levels():
         edited_vis_character_count = len(edited_vis_text)
 
         try:
-            file_path = os.path.join("Visualizations", vis_name)
+            file_path = script_dir.parent / "Visualizations" / vis_name
 
             # computing image size and calculating text_density
             with Image.open(file_path) as img:

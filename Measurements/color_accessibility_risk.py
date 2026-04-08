@@ -1,5 +1,6 @@
 import pandas as pd 
 import numpy as np
+from pathlib import Path
 from itertools import combinations
 from colorspacious import cspace_convert
 from skimage.color import rgb2lab, deltaE_ciede2000
@@ -116,7 +117,9 @@ def color_blind_accessibility(filename, colors):
 # this is just an example, one can easily infer how we made this step iterative and assigned them to all visualizations. 
 def example_run():
     # read in our dataset
-    visualizations_labels = pd.read_csv("./Dataset/visualizations_labels.csv")
+    script_dir = Path(__file__).parent
+    file_path = script_dir.parent / "Dataset" / "visualizations_labels.csv"
+    visualizations_labels = pd.read_csv(file_path)
 
     # grab a random visualization's index 
     random_index = visualizations_labels.sample(n=1).index[0]
