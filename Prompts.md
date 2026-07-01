@@ -54,7 +54,7 @@ Rules:
 """
 ```
 
-## GPT Prompt used in 5b (visual embellishments primarily extracted)
+## GPT Prompt used in 5b (visual embellishments and color values extracted)
 ```
 SYSTEM_PROMPT = """You are assisting with building a research corpus of data visualizations.
 
@@ -152,7 +152,7 @@ Rules:
 """
 ```
 
-## GPT Prompt used in 5b (structural features, chart family, data context, some visual embellishments) 
+## GPT Prompt used in 5b (structural features, chart family, and data context) 
 ```
 chart_type_categories = [
     "bar_chart",              # includes grouped, stacked, horizontal
