@@ -1,6 +1,6 @@
 # Charting-Public-Health 
 Welcome! 
-This GitHub repo is the associated visualization dataset, figures, and important code to IEEE VIS 2026 Submission "Charting Public Health: A Taxonomic Study of Visualization Practices in the Public Health Field." The following information describes the content you'll find in each directory or file. The ReadMe ends describing the packages used (and needed to be installed) to run the scripts included in our repo.
+This GitHub repo is the associated visualization dataset, figures, and important code for the IEEE VIS 2026 Submission "Charting Public Health: A Taxonomic Study of Visualization Practices in the Public Health Field." The following information describes the content you'll find in each directory or file. The ReadMe ends describing the packages used (and needed to be installed) to run the scripts included in our repo.
 
 ## Dataset
 Directory includes the complete dataset (either in CSV or JSON format) consisting of each visualization file information and metadata, chart family, data context, structural features, visual embellishments, color, and text density. 
