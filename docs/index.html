@@ -5,36 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charting Public Health</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
     <header>
         <h1>Charting Public Health: A Taxonomic Study of Visualization Practices in the Public Health Field</h1>
-        <p>A simple GitHub Pages site</p>
+        <h2>by <a class="personal_pages" href="https://miahines.github.io/">Mia Hines</a> and <a class="personal_pages" href="https://alvitta.com/">Alvitta Ottley</a></h2>
     </header>
 
     <main>
-        <section class="card">
-            <h2>About</h2>
-            <p>
-                This is a basic HTML, CSS, and JavaScript website
-                deployed using GitHub Pages.
-            </p>
+        <section class="teaser">
+            <div class="card"> 
+                <img alt="The image displays the pipeline for identifying stable design profiles from the collected public health organizations' visualizations. The five design profiles are tagged as Statistical, Narrative, Geospatial, Domain-Focused, and Biomedical." 
+                    src="images/teaser_updated_clusters.png" width="1000" height="700"> 
+            </div>
+        </section>
+        <section class="links"> 
+            <div class="links_content"> 
+                <div class="paper_links">
+                    <a href="https://github.com/washuvis/ChartingPublicHealth"
+                    class="icon_button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub Repository"
+                    title="GitHub Repository">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-            <button id="button">
-                Click Me
-            </button>
+                    <a href="Charting_Public_Health___Submission_preprint.pdf"
+                    class="icon_button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Read the paper"
+                    title="Read the paper">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
 
-            <p id="message"></p>
+                    <!-- VIBE Lab -->
+                    <a href="https://visualdata.wustl.edu/"
+                    class="icon_button vibe_button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="VIBE Lab"
+                    title="VIBE Lab">
+                        <img src="images/vibe_logo.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section class="abstract"> 
+            <div class="abstract_content"> 
+                <h1 style="text-align: center;">Introduction</h1>
+                <p><b>Abstract:</b> Public health organizations regularly produce and publish data visualizations to raise awareness of critical issues, influence
+                decision-making processes, and promote overall well-being. However, the design practices shaping these visualizations in real-
+                world settings remain largely unexamined, limiting the research community’s ability to evaluate their effectiveness, accessibility, and
+                alignment with communication goals. To address this gap, we construct and analyze a large-scale corpus of over 4,000 real-world
+                data visualizations drawn from more than two dozen websites associated with U.S. and international public health organizations. We
+                evaluate salient design characteristics like chart type, visualization accessibility, use of embellishments like iconography, and design
+                flaws. This work contributes to understanding real-world decisions in designing data visualizations and supports public health officials
+                in improving data visualization-related communications. </p>
+            </div>
+        </section>
+        <section class="resources"> 
+            <div class="resources_content">
+                <h1 style="text-align: center;">Published Materials</h1>
+                <p style="text-align: center; margin-top: -15px;">
+                    (available on the Github Repo)
+                </p>
+
+                <ul class="resources_list"> 
+                    <li class="resource_item">
+                        Visualizations from 26 Public Health Organizations
+                    </li>
+                    <li class="resource_item">
+                        X Visualizations in Total
+                    </li>
+                    <li class="resource_item">
+                        Labeled Datasets (in JSON or CSV formats), including Codebook
+                    </li>
+                    <li class="resource_item">
+                        LLM Prompts &amp; PCA Scripts
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="disclaimer"> 
+            <div class="card"> 
+                <h1 style="text-align: center;">Visualization Copyright Consideration</h1>
+                <p><b style="color: rgb(154, 8, 8); ">DISCLAIMER!</b> Visualizations collected from 26 public health organizations, 
+                    the majority of which are U.S. government agencies whose visualizations are in the public domain. 
+                    Data collection was limited to publicly available web pages. We have released the complete set of public-domain visualizations, 
+                    along with the derived annotations, metadata, codebook, and analysis scripts creating resource 
+                    for future research. Visualizations from nonprofit and other non-governmental organizations cannot
+                    be redistributed because they may remain the intellectual property of their respective organizations; for these cases,
+                    we provide annotations and metadata to facilitate retrieval from the original sources where permitted.
+                    Researchers using the corpus for downstream applications, including computational model development, should ensure 
+                    that their use complies with applicable copyright, licensing, and website terms. 
+                </p>
+            </div>
+        </section>
+        <section class="acknowledgements"> 
+            <div class="acknowledgements_content"> 
+                <h1 style="text-align: center;">Acknowledgements</h1>
+                <p> This work is supported in part by the National Science Foundation
+                    under Grants Nos. 2142977 and 2330245, which support the Engineering Research Center for Carbon Utilization Redesign through
+                    Biomanufacturing-Empowered Decarbonization (CURB). M. Hines
+                    was supported by the following fellowship programs in sequential order:
+                    Clare Boothe Luce and NRT-AI: AI Advancements and Convergence
+                    in Computational, Environmental, and Social Sciences (AI-ACCESS)
+                    (No. 2244165).
+                </p>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>
             © 2026 My Website
         </p>
-    </footer>
+    </footer> -->
 
     <script src="script.js"></script>
 </body>

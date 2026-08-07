@@ -5,27 +5,30 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
+    background: #ffffff;
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 50px 20px;
-    background: #2c3e50;
+    background: #352869;
     color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 main {
     display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
 }
 
 .card {
     background: white;
-    max-width: 600px;
     width: 100%;
+    max-width: 1100px;
+    margin: 10px 10px 0px 10px;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -55,4 +58,156 @@ footer {
     text-align: center;
     padding: 20px;
     color: #666;
+}
+
+.personal_pages {
+    color: #fff
+}
+
+section {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+}
+
+.teaser {
+    max-height: 800px;
+}
+.abstract {
+    background-color: #352869;
+    min-height: 300px;
+}
+
+.abstract_content {
+    max-width: 1000px;
+    color: #fff;
+    
+}
+
+p {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    text-align: left;
+}
+
+.resources {
+  min-height: 300px;
+  background-color: #9a93b4;
+  border-top: 2px solid #d4d4d4;
+}
+
+.resources_content {
+    max-width: 1000px;
+    margin-top: -20px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.resources_list {
+    padding: 0;
+    margin: 10px 0px 10px 0px;
+    font-family: Arial, sans-serif; 
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    list-style-type: none;
+    color: #5d5287; 
+    font-weight: bold;
+}
+
+.resource_item {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    font-size: 1rem;
+}
+
+.disclaimer {
+    border-top: 2px solid #d4d4d4;
+
+    min-height: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+.paper_links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.icon_button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #612868;
+    color: white;
+
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+
+    transition: transform 0.2s ease, 
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.icon_button:hover {
+    background-color: #352869;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.links {
+    min-height: 150px;
+}
+
+.links_content {
+    margin-bottom: 10px;
+}
+
+
+
+/* VIBE logo */
+/* .vibe_button {
+    overflow: hidden;
+}
+*/ 
+.vibe_button img {
+    width: 50px;
+    height: 32px;
+    object-fit: contain;
+} 
+
+.vibe_button {
+    background-color: white;
+    border: 2px solid #612868;
+}
+
+.vibe_button:hover {
+    background-color: white;
+    border-color: #352869;
+}
+
+.acknowledgements {
+    background-color: #fff;
+    min-height: 300px;
+}
+
+.acknowledgements_content {
+    max-width: 1000px;
+    color: #000;
+    margin-top: -100px;
+    
 }
