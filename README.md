@@ -29,7 +29,7 @@ Public health organizations regularly produce and publish data visualizations to
 ### Prerequisites & Needed Materials
 We use the following Python packages in the code files included in this repository. 
 
-** Standard Libraries **
+**Standard Libraries**
 - OS
 - pathlib
 - numpy
@@ -37,7 +37,7 @@ We use the following Python packages in the code files included in this reposito
 - itertools
 - colorsys
 
-**  Third-Party Libraries **
+**Third-Party Libraries**
 - Pillow - Python Imaging Library (PIL)
 - pandas
 - colorspacious
@@ -49,4 +49,5 @@ We use the following Python packages in the code files included in this reposito
 
 ## Disclaimer 
 **Statement:** Visualizations collected from 26 public health organizations, the majority of which are U.S. government agencies whose visualizations are in the public domain. Data collection was limited to publicly available web pages. We have released the complete set of public-domain visualizations, along with the derived annotations, metadata, codebook, and analysis scripts, creating a resource for future research. Visualizations from nonprofit and international organizations cannot be redistributed because they may remain the intellectual property of their respective organizations; for these cases, we provide annotations and metadata to facilitate retrieval from the original sources where permitted. Researchers using the corpus for downstream applications, including computational model development, should ensure that their use complies with applicable copyright, licensing, and website terms.
+
 **Consideration:** We have removed a total of 114 visualizations from the Visualizations because they're distributed from nonprofit and international organizations. Dataset files still have the metadata and features associated with these images to facilitate retrieval as described previously. 
