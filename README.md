@@ -8,28 +8,21 @@ This GitHub repo is the associated visualization dataset, figures, and important
 Public health organizations regularly produce and publish data visualizations to raise awareness of critical issues, influence decision-making processes, and promote overall well-being. However, the design practices shaping these visualizations in real-world settings remain largely unexamined, limiting the research community's ability to evaluate their effectiveness, accessibility, and alignment with communication goals. To address this gap, we construct and analyze a large-scale corpus of over 4,000 real-world data visualizations drawn from more than two dozen websites associated with U.S. and international public health organizations. We evaluate salient design characteristics like chart type, visualization accessibility, use of embellishments like iconography, and design flaws. This work contributes to understanding real-world decisions in designing data visualizations and supports public health officials in improving data visualization-related communications. 
 
 ## Repo Structure
-- Dataset
-  The directory includes the complete dataset (either in CSV or JSON format) consisting of each visualization file's information and metadata, chart family, data context, structural features, visual embellishments, color, and text density. 
+- **Dataset:** The directory includes the complete dataset (either in CSV or JSON format) consisting of each visualization file's information and metadata, chart family, data context, structural features, visual embellishments, color, and text density. 
 
-- Measurements 
-  Python scripts that show our computation of Text Density, Color Accessibility Risk, and HSV Color Assignments (consisting of the derived variables: palette size, if the visualization is grayscale, HSV color names assignment). 
+- **Measurements:** Python scripts that show our computation of Text Density, Color Accessibility Risk, and HSV Color Assignments (consisting of the derived variables: palette size, if the visualization is grayscale, HSV color names assignment). 
 
-- Paper Charts
-  Image files (PNG or PDF) of the charts in the paper: design profiles, a global view of design practices, and evaluating risky pairs in color accessibility measurement. 
+- **Paper Charts:** Image files (PNG or PDF) of the charts in the paper: design profiles, a global view of design practices, and evaluating risky pairs in color accessibility measurement. 
 
-- PCA Work 
-  Python scripts used to evaluate Visualization Design Profiles: Statistical, Institutional, Narrative, Scientific, and Outlier.  Within the PCA Work, we used a dataset that described each organization's visualization corpus by evaluating the percentage of a particular label (e.g., has text annotation or is a bar chart) within that corpus. In our PCA scripts, we       standardized all label measurements within that dataset. Note: figures produced in those scripts were for internal analytical use only—they're not featured in the paper.
+- **PCA Work:** Python scripts used to evaluate Visualization Design Profiles: Statistical, Institutional, Narrative, Scientific, and Outlier.  Within the PCA Work, we used a dataset that described each organization's visualization corpus by evaluating the percentage of a particular label (e.g., has text annotation or is a bar chart) within that corpus. In our PCA scripts, we standardized all label measurements within that dataset. Note: figures produced in those scripts were for internal analytical use only—they're not featured in the paper.
 
-- Visualizations 
-  Image files of the 4,171 visualizations within our final corpus. Note: 114 image files were removed due to potential copyright. More information can be found in the Disclaimer below. 
+- **Visualizations:** Image files of the 4,171 visualizations within our final corpus. Note: 114 image files were removed due to potential copyright. More information can be found in the Disclaimer below. 
 
-- Codebook.md 
-  A complete codebook of all the tags featured in the dataset. 
+- **Codebook.md:** A complete codebook of all the tags featured in the dataset. 
 
-- Prompts.md 
-  Markdown file that lists all prompts used for GPT tagging. Note: some tags are excluded from the visualization dataset because they were outside our main investigations, redundant, or exhibit inconsistent behavior.
+- **Prompts.md:** Markdown file that lists all prompts used for GPT tagging. Note: some tags are excluded from the visualization dataset because they were outside our main investigations, redundant, or exhibit inconsistent behavior.
 
-- archived_urls.csv
+- **archived_urls.csv:** 
   Generated archived webpages related to our visualization corpus with the Internet Archive, Save Page Now API. 
 
 ## Technical Items 
